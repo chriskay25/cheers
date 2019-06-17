@@ -1,6 +1,3 @@
-require "cheers/version"
+require_relative "cheers/version"
+require_relative "cheers/cli"
 
-module Cheers
-  class Error < StandardError; end
-  # Your code goes here...
-end
