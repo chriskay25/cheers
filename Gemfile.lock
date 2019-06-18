@@ -6,6 +6,9 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    mini_portile2 (2.4.0)
+    nokogiri (1.10.3)
+      mini_portile2 (~> 2.4.0)
     rake (10.5.0)
 
 PLATFORMS
@@ -14,6 +17,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   cheers!
+  nokogiri
   rake (~> 10.0)
 
 BUNDLED WITH
