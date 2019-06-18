@@ -1,4 +1,5 @@
-require_relative "cheers/version"
-require_relative "cheers/beer"
-require_relative "cheers/cli"
+module Cheers 
+end 
+
+require_relative '../config/environment'
 

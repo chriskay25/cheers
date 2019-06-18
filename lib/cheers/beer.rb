@@ -2,9 +2,9 @@ class Cheers::Beer
   
   attr_accessor :name, :style, :strength 
   
-  def all_the_beer
+  def self.all_the_beer
     # gathers and returns a list of beers and their properties
-    
+    [{}]
     beer1 = self.new 
     beer1.name = "Stouty McStouterson"
     beer1.style = "Stout"
