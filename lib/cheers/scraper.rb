@@ -6,11 +6,16 @@ class Cheers::Scraper
   end 
 
   def breweries 
-    # Selects the text we want and returns an array of arrays, formatted [["Brewery Name", "Brewery Address"],["Brewery Name", "Brewery Address"],..]
-    # Currently returns breweries and bars/eateries, just want breweries though, so will need to find a way to access just the first "ul".
-    page.css("div#ba-content ul li").map {|brewery| brewery.text}.map {|info| info.split(" - ")}
+    # Uses the page method to get HTML, grabs content from first ul, then selects the text we want from the li's 
+    # and splits it to return an array of arrays, formatted [["Brewery Name", "Brewery Address"],["Brewery Name", "Brewery Address"],..]
+    page.css("div#ba-content ul").first.css("li").map {|li| li.text}.map {|brewery| brewery.split(" - ")}
   end 
   
+  def brewery_links 
+    # Returns an array of links to the individual breweries info pages. Format is ["/beer/profile/46938"]
+    page.css("div#ba-content ul").first.css("li a").map {|a| a.attribute("href").value}
+  end 
+
   # def brews 
   #   #Need a way to scrape the individual beers, whose links are on the original page listing breweries.
   #   breweries.each do {|brewery| brewery}
