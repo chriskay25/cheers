@@ -13,7 +13,15 @@ class Cheers::Scraper
   
   def brewery_links 
     # Returns an array of links to the individual breweries info pages. Format is ["/beer/profile/46938"]
-    page.css("div#ba-content ul").first.css("li a").map {|a| a.attribute("href").value}
+    links = page.css("div#ba-content ul").first.css("li a").map {|a| a.attribute("href").value} 
+    # The array above doesn't contain the first part of the website, so it needs to be concatonated.
+    links.map {|link| "https://www.beeradvocate.com" + link}
+  end 
+
+  def brewery_page 
+    brewery_links.map do |link| 
+      Nokogiri::HTML(open(link))
+    end 
   end 
 
   # def brews 
