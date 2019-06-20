@@ -38,7 +38,10 @@ class Cheers::CLI
     Cheers::Scraper.breweries.each do |brewery_hash|
       Cheers::Brewery.new(brewery_hash) 
     end 
-    Cheers::Brewery.all 
+    # puts "Enter the number of the brewery to learn more:"
+    Cheers::Brewery.all.each.with_index(1) do |brewery, index|
+      puts "#{index}. #{brewery.name} - #{brewery.address}"
+    end 
   end 
   
 end 
