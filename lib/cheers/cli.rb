@@ -4,41 +4,24 @@ class Cheers::CLI
   
   def call 
     greeting
-    options 
+    make_breweries
   end 
   
   def greeting 
-    puts "Welcome. This CLI includes information about breweries in Downtown Atlanta as well as the beer they sell."
+    puts "Welcome. This CLI includes information about breweries in Downtown Atlanta."
   end 
-  
-  def options 
-    puts "To select one of the following options, type its corresponding number and press 'Enter':"
-    puts <<-DOC 
-      1. I want a list of Atlanta breweries
-      2. I already have a brewery in mind, show me their beer
-      3. Beer ye, beer ye
-    DOC
     
-    input = nil 
-    while input != "exit" 
-      input = gets.strip.downcase 
-      if input == "1"
-        self.make_breweries
-      elsif input == "2"
-        puts "These are the beers sold at this location"
-      elsif input == "3" 
-        puts "Info about beer"
-      else 
-        puts "That is not a valid option, please try again"
-      end 
-    end 
-  end 
+    # input = nil 
+    # while input != "exit" 
+    #   input = gets.strip.downcase 
+    #     puts "That is not a valid option, please try again"
 
   def make_breweries
+    #Scrapes the breweries page and creates brewery objects.
     Cheers::Scraper.breweries.each do |brewery_hash|
       Cheers::Brewery.new(brewery_hash) 
     end 
-    # puts "Enter the number of the brewery to learn more:"
+    puts "Enter the corresponding number of the brewery to learn more:"
     Cheers::Brewery.all.each.with_index(1) do |brewery, index|
       puts "#{index}. #{brewery.name} - #{brewery.address}"
     end 
