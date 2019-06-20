@@ -25,9 +25,12 @@ class Cheers::Scraper
     @@brewery_list.map do |brewery| 
       bp = Nokogiri::HTML(open(brewery[:url]))
       beer_count = bp.css("div#stats_box dd").children[0].text
-      binding.pry
-      beer_list = bp.css("tbody a").map.with_index(1) do |a, index| 
-        a.children.text
+      # beer_list = bp.css("tbody a").map {|a| a.children.text}
+      # beer_list.each.with_index(1) do |beer, index|
+      #   index.odd? ? name = beer : type = beer 
+      # beer_list = bp.css("tbody a").map {|a| a.attribute("href").value}
+      bp.css("tbody tr td").map.with_index(1) do |td, index| 
+        index.odd? ? "#{td} a" : nil 
       end 
     end 
   end 
