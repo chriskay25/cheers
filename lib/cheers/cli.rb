@@ -23,7 +23,7 @@ class Cheers::CLI
     while input != "exit" 
       input = gets.strip.downcase 
       if input == "1"
-        puts "All the breweries"
+        self.make_breweries
       elsif input == "2"
         puts "These are the beers sold at this location"
       elsif input == "3" 
@@ -31,6 +31,12 @@ class Cheers::CLI
       else 
         puts "That is not a valid option, please try again"
       end 
+    end 
+  end 
+
+  def make_breweries
+    Cheers::Scraper.breweries.each do |brewery_hash|
+      Cheers::Brewery.new(brewery_hash) 
     end 
   end 
   
