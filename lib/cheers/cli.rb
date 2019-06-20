@@ -38,6 +38,7 @@ class Cheers::CLI
     Cheers::Scraper.breweries.each do |brewery_hash|
       Cheers::Brewery.new(brewery_hash) 
     end 
+    Cheers::Brewery.all 
   end 
   
 end 
