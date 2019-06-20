@@ -21,16 +21,25 @@ class Cheers::Scraper
       brewery[:url] = "https://www.beeradvocate.com" + page.css("div#ba-content ul").first.css("li a").attribute("href").value
       @@brewery_list << brewery
     end
+    # @@brewery_list is returned as an array of hashes [{name: name, address: address, url: url}, {name: na...}]
     @@brewery_list
   end 
 
 
   def self.brewery_page 
-    brewery_links.map do |link| 
-      Nokogiri::HTML(open(link))
+    @@brewery_hash = {}
+    @@brewery_list.map do |brewery| 
+      bp = Nokogiri::HTML(open(brewery[:url]))
+      beer_count = bp.css("div#stats_box dd").children[0].text
+      binding.pry
+      beer_list = bp.css("tbody a").map.with_index(1) do |a, index| 
+        a.children.text
+      end 
     end 
   end 
 
   
 end 
+
+
     

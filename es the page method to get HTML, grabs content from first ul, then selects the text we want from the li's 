@@ -1,0 +1,121 @@
+=> [1;34m#(Document:0x3ffff925d620 {[0m
+  name = [31m[1;31m"[0m[31mdocument[1;31m"[0m[31m[0m,
+  children = [
+    [1;34m#(DTD:0x3ffff9873604 {[0m name = [31m[1;31m"[0m[31mhtml[1;31m"[0m[31m[0m }),
+    [1;34m#(Element:0x3ffff98723a8 {[0m
+      name = [31m[1;31m"[0m[31mhtml[1;31m"[0m[31m[0m,
+      attributes = [
+        [1;34m#(Attr:0x3ffff9875a80 {[0m name = [31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mXenForo[1;31m"[0m[31m[0m }),
+        [1;34m#(Attr:0x3ffff9875a6c {[0m name = [31m[1;31m"[0m[31mlang[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31men-US[1;31m"[0m[31m[0m }),
+        [1;34m#(Attr:0x3ffff9875a58 {[0m name = [31m[1;31m"[0m[31mdir[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mLTR[1;31m"[0m[31m[0m }),
+        [1;34m#(Attr:0x3ffff9875a44 {[0m
+          name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m,
+          value = [31m[1;31m"[0m[31mPublic NoJs uix_javascriptNeedsInit LoggedOut Sidebar  Responsive pageIsLtr   not_hasTabLinks  hasSearch   is-sidebarOpen hasRightSidebar is-setWidth navStyle_0 pageStyle_0 hasFlexbox[1;31m"[0m[31m[0m
+          }),
+        [1;34m#(Attr:0x3ffff9875a30 {[0m name = [31m[1;31m"[0m[31mxmlns:fb[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mhttp://www.facebook.com/2008/fbml[1;31m"[0m[31m[0m })],
+      children = [
+        [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+        [1;34m#(Element:0x3ffff9884850 {[0m
+          name = [31m[1;31m"[0m[31mhead[1;31m"[0m[31m[0m,
+          children = [
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99c834c {[0m name = [31m[1;31m"[0m[31mmeta[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3ffff99cba38 {[0m name = [31m[1;31m"[0m[31mcharset[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mutf-8[1;31m"[0m[31m[0m })] }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99d37d8 {[0m
+              name = [31m[1;31m"[0m[31mmeta[1;31m"[0m[31m[0m,
+              attributes = [ [1;34m#(Attr:0x3ffff99d2be4 {[0m name = [31m[1;31m"[0m[31mhttp-equiv[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mX-UA-Compatible[1;31m"[0m[31m[0m }), [1;34m#(Attr:0x3ffff99d2bd0 {[0m name = [31m[1;31m"[0m[31mcontent[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mIE=Edge,chrome=1[1;31m"[0m[31m[0m })]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99d8bfc {[0m
+              name = [31m[1;31m"[0m[31mmeta[1;31m"[0m[31m[0m,
+              attributes = [ [1;34m#(Attr:0x3ffff99d82d8 {[0m name = [31m[1;31m"[0m[31mname[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mviewport[1;31m"[0m[31m[0m }), [1;34m#(Attr:0x3ffff99d82c4 {[0m name = [31m[1;31m"[0m[31mcontent[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mwidth=device-width, initial-scale=1[1;31m"[0m[31m[0m })]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99f02d4 {[0m name = [31m[1;31m"[0m[31mbase[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3ffff99f3998 {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mhttps://www.beeradvocate.com/community/[1;31m"[0m[31m[0m })] }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99f782c {[0m
+              name = [31m[1;31m"[0m[31mscript[1;31m"[0m[31m[0m,
+              children = [
+                [1;34m#(CDATA [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31mvar _b = document.getElementsByTagName('base')[0], _bH = [1;35m\"[0m[31mhttps://www.beeradvocate.com/community/[1;35m\"[0m[31m;[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31mif (_b && _b.href != _bH) _b.href = _bH;[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;31m"[0m[31m[0m)]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99fb454 {[0m name = [31m[1;31m"[0m[31mtitle[1;31m"[0m[31m[0m, children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31mScofflaw Brewing Company | Atlanta, GA | Beers | BeerAdvocate[1;31m"[0m[31m[0m)] }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99ff7e8 {[0m name = [31m[1;31m"[0m[31mnoscript[1;31m"[0m[31m[0m, children = [ [1;34m#(Element:0x3ffff99fe0dc {[0m name = [31m[1;31m"[0m[31mstyle[1;31m"[0m[31m[0m, children = [ [1;34m#(CDATA [0m[31m[1;31m"[0m[31m.JsOnly, .jsOnly { display: none !important; }[1;31m"[0m[31m[0m)] })] }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff9977f14 {[0m
+              name = [31m[1;31m"[0m[31mlink[1;31m"[0m[31m[0m,
+              attributes = [
+                [1;34m#(Attr:0x3ffff99775f0 {[0m name = [31m[1;31m"[0m[31mrel[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstylesheet[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3ffff99775dc {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mcss.php?css=xenforo,form,public&style=6&dir=LTR&d=1560906022[1;31m"[0m[31m[0m })]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff997d568 {[0m
+              name = [31m[1;31m"[0m[31mlink[1;31m"[0m[31m[0m,
+              attributes = [
+                [1;34m#(Attr:0x3ffff997cc44 {[0m name = [31m[1;31m"[0m[31mrel[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstylesheet[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3ffff997cc30 {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mcss.php?css=login_bar,moderator_bar,notices,uix_extendedFooter&style=6&dir=LTR&d=1560906022[1;31m"[0m[31m[0m })]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff9982ba8 {[0m
+              name = [31m[1;31m"[0m[31mlink[1;31m"[0m[31m[0m,
+              attributes = [ [1;34m#(Attr:0x3ffff9982284 {[0m name = [31m[1;31m"[0m[31mrel[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstylesheet[1;31m"[0m[31m[0m }), [1;34m#(Attr:0x3ffff9982270 {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mcss.php?css=uix,uix_style&style=6&dir=LTR&d=1560906022[1;31m"[0m[31m[0m })]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff998a290 {[0m name = [31m[1;31m"[0m[31mstyle[1;31m"[0m[31m[0m, children = [ [1;34m#(CDATA [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;35m\t[0m[31m/*** UIX -- PER USER STYLES ***/[1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m)] }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99a7f20 {[0m
+              name = [31m[1;31m"[0m[31mlink[1;31m"[0m[31m[0m,
+              attributes = [ [1;34m#(Attr:0x3ffff99a75fc {[0m name = [31m[1;31m"[0m[31mrel[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstylesheet[1;31m"[0m[31m[0m }), [1;34m#(Attr:0x3ffff99a75e8 {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mcss.php?css=EXTRA&style=6&dir=LTR&d=1560906022[1;31m"[0m[31m[0m })]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99ad614 {[0m name = [31m[1;31m"[0m[31mstyle[1;31m"[0m[31m[0m, children = [ [1;34m#(CDATA [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m/* Node Styling */[1;35m\n[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m)] }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99b17f0 {[0m
+              name = [31m[1;31m"[0m[31mscript[1;31m"[0m[31m[0m,
+              attributes = [ [1;34m#(Attr:0x3ffff99b0ecc {[0m name = [31m[1;31m"[0m[31masync[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31m[1;31m"[0m[31m[0m }), [1;34m#(Attr:0x3ffff99b0eb8 {[0m name = [31m[1;31m"[0m[31msrc[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mhttps://www.googletagmanager.com/gtag/js?id=UA-1066712-1[1;31m"[0m[31m[0m })]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99b6ef8 {[0m
+              name = [31m[1;31m"[0m[31mscript[1;31m"[0m[31m[0m,
+              children = [
+                [1;34m#(CDATA [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31mwindow.dataLayer = window.dataLayer || [];[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31mfunction gtag(){dataLayer.push(arguments);}[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31mgtag('js', new Date());[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31mgtag('config', 'UA-1066712-1', {[1;35m\n[0m[31m  [1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m'cookie_domain': 'www.beeradvocate.com',[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m// <!-- slot: ga_config_start -->[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m});[1;35m\n[0m[31m[1;35m\t[0m[31m[1;31m"[0m[31m[0m)]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff99bc1c8 {[0m
+              name = [31m[1;31m"[0m[31mlink[1;31m"[0m[31m[0m,
+              attributes = [ [1;34m#(Attr:0x3ffff99bf878 {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstyles/uix/uix/css/font-awesome.min.css[1;31m"[0m[31m[0m }), [1;34m#(Attr:0x3ffff99bf864 {[0m name = [31m[1;31m"[0m[31mrel[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstylesheet[1;31m"[0m[31m[0m })]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff8ef1ce8 {[0m
+              name = [31m[1;31m"[0m[31mlink[1;31m"[0m[31m[0m,
+              attributes = [
+                [1;34m#(Attr:0x3ffff8f07174 {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31m//fonts.googleapis.com/css?family=Open+Sans:300,400,700,600[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3ffff8f07138 {[0m name = [31m[1;31m"[0m[31mrel[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstylesheet[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3ffff8f070e8 {[0m name = [31m[1;31m"[0m[31mtype[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mtext/css[1;31m"[0m[31m[0m })]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff9037e18 {[0m
+              name = [31m[1;31m"[0m[31mlink[1;31m"[0m[31m[0m,
+              attributes = [
+                [1;34m#(Attr:0x3ffff903dcf0 {[0m name = [31m[1;31m"[0m[31mrel[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstylesheet[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3ffff903dcdc {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mhttps://use.fontawesome.com/releases/v5.7.2/css/all.css[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3ffff903dca0 {[0m name = [31m[1;31m"[0m[31mintegrity[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31msha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3ffff903dc8c {[0m name = [31m[1;31m"[0m[31mcrossorigin[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31manonymous[1;31m"[0m[31m[0m })]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff92079c8 {[0m name = [31m[1;31m"[0m[31mscript[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3ffff92068ac {[0m name = [31m[1;31m"[0m[31msrc[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mhttps://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js[1;31m"[0m[31m[0m })] }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff921ae9c {[0m
+              name = [31m[1;31m"[0m[31mscript[1;31m"[0m[31m[0m,
+              children = [ [1;34m#(CDATA [0m[31m[1;31m"[0m[31mif (!window.jQuery) { document.write('<scr'+'ipt type=[1;35m\"[0m[31mtext/javascript[1;35m\"[0m[31m src=[1;35m\"[0m[31mjs/jquery/jquery-1.11.0.min.js[1;35m\"[0m[31m><[1;35m\\[0m[31m/scr'+'ipt>'); }[1;31m"[0m[31m[0m)]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff922aacc {[0m name = [31m[1;31m"[0m[31mscript[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3ffff9233370 {[0m name = [31m[1;31m"[0m[31msrc[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mjs/xenforo/xenforo.js?_v=3fb40d2d[1;31m"[0m[31m[0m })] }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Comment [0m[31m[1;31m"[0m[31m[if lt IE 9]>[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m [1;35m\n[0m[31m        [1;35m\t[0m[31m<script src=[1;35m\"[0m[31m//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js[1;35m\"[0m[31m></script>[1;35m\n[0m[31m[1;35m\t[0m[31m        [1;35m\n[0m[31m[1;35m\t[0m[31m        <script src=[1;35m\"[0m[31m//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js[1;35m\"[0m[31m></script>[1;35m\n[0m[31m[1;35m\t[0m[31m        [1;35m\n[0m[31m[1;35m\t[0m[31m        <script src=[1;35m\"[0m[31m//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js[1;35m\"[0m[31m></script>[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m<![endif][1;31m"[0m[31m[0m),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3ffff925d1e8 {[0m
+              name = [31m[1;31m"[0m[31mscript[1;31m"[0m[31m[0m,
+              children = [
+                [1;34m#(CDATA [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;35m\t[0m[31muix = {[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31melm: {},[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31mfn:{},[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31minit: function(){[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31mif (uix.betaMode) {[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31mconsole.group('uix.%cinit()', 'color:#3498DB');[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m}[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31mfor(var x=0;x<uix.events.init.length;x++){[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31muix.events.init[x]()[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m  [1;35m\t[0m[31m}[1;35m\n[0m[31m[1;35m\t[0m[31m[1;35m\t[0m[31m  [1;35m\t[0m[31mc
