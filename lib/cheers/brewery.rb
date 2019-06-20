@@ -1,7 +1,15 @@
 class Cheers::Brewery 
   
-  def breweries 
-    # gathers and returns a list of breweries 
+  attr_accessor :name, :address, :brews, :url
+
+  def initialize(name, address) 
+    @name = name 
+    @address = address 
+  end 
+
+  def create_breweries
+    
+
   end 
   
 end 
