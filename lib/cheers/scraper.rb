@@ -1,6 +1,7 @@
 class Cheers::Scraper
 
   @@brewery_list = []
+  @@brews = []
 
   def self.breweries 
     # Uses the page method to get HTML, grabs content from first ul, then selects the text from the li's and split it to return an
@@ -26,13 +27,19 @@ class Cheers::Scraper
       bp = Nokogiri::HTML(open(brewery[:url]))
       beer_count = bp.css("div#stats_box dd").children[0].text
       #Iterates over the HTML of the brewery page to get a list of beer and their attributes.
-      bp.css("tbody tr").map do |tr|
-        url = tr.css("td a").attribute("href").value
+      bp.css("tbody tr").each do |tr|
+        # url = tr.css("td a").attribute("href").value
         name = tr.css("td a b").text 
         type = tr.css("td a")[1].text
-
-      binding.pry
+        abv = tr.css("td span").text.to_f
+        tr = Hash.new 
+        # tr[:url] = url
+        tr[:name] = name 
+        tr[:type] = type 
+        tr[:abv] = abv 
+        @@brews << tr
       end 
+      @@brews
     end 
   end 
 
