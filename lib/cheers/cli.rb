@@ -5,6 +5,7 @@ class Cheers::CLI
   def call 
     greeting
     make_breweries
+    brewery_choice 
   end 
   
   def greeting 
@@ -27,8 +28,16 @@ class Cheers::CLI
     input = nil 
     while input != "exit"
       input = gets.to_i
-      Cheers::Brewery.all.each
+      Cheers::Brewery.all.detect do |b|
+        if input == b.index 
+          puts b.
     end 
   end 
   
+  def make_beer 
+    Cheers::Scraper.brewery_page.each do |beer_hash|
+      Cheers::Beer.new(beer_hash)
+    end 
+  end 
+
 end 
