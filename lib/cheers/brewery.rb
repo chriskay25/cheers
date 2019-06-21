@@ -8,11 +8,6 @@ class Cheers::Brewery
     @@all << self
   end 
 
-  def create_breweries()
-    
-
-  end 
-
   def self.all
     @@all 
   end 
