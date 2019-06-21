@@ -10,7 +10,6 @@ class Cheers::CLI
   def greeting 
     puts "Welcome. This CLI includes information about breweries in Downtown Atlanta."
   end 
-    
 
   def make_breweries
     #Scrapes the breweries page and creates brewery objects.
@@ -29,7 +28,7 @@ class Cheers::CLI
     while input != "exit"
       input = gets.to_i
       Cheers::Brewery.all.each
-    # end 
+    end 
   end 
   
 end 

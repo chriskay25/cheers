@@ -30,12 +30,12 @@ class Cheers::Scraper
       bp.css("tbody tr").each do |tr|
         # url = tr.css("td a").attribute("href").value
         name = tr.css("td a b").text 
-        type = tr.css("td a")[1].text
+        style = tr.css("td a")[1].text
         abv = tr.css("td span").text.to_f
         tr = Hash.new 
         # tr[:url] = url
         tr[:name] = name 
-        tr[:type] = type 
+        tr[:style] = style
         tr[:abv] = abv 
         @@brews << tr
       end 
