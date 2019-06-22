@@ -22,27 +22,24 @@ class Cheers::Scraper
   end 
 
 
-  def self.brewery_page 
-    @@brewery_list.map do |brewery| 
-      bp = Nokogiri::HTML(open(brewery[:url]))
+  def self.brewery_page(brewery)
+    # brewery_choice = @@brewery_list.select {|brewery| brewery[:index] == brewery_index}[0] 
+      bp = Nokogiri::HTML(open(brewery.url))
       beer_count = bp.css("div#stats_box dd").children[0].text
       #Iterates over the HTML of the brewery page to get a list of beer and their attributes.
-      bp.css("tbody tr").each do |tr|
+      bp.css("tbody tr").map do |tr|
         # url = tr.css("td a").attribute("href").value
         name = tr.css("td a b").text 
         style = tr.css("td a")[1].text
         abv = tr.css("td span").text.to_f
         tr = Hash.new 
         # tr[:url] = url
-        tr[:index] = brewery[:index]
+        tr[:brewery] = brewery
         tr[:name] = name 
-        binding.pry
         tr[:style] = style
         tr[:abv] = abv 
-        @@brews << tr
+        tr
       end 
-      @@brews
-    end 
   end 
 
   

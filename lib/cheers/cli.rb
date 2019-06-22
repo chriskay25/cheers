@@ -28,20 +28,17 @@ class Cheers::CLI
     input = nil 
     while input != "exit"
       input = gets.to_i
-      Cheers::Brewery.all.find do |b|
-        # binding.pry 
-        if input == b.index 
-          # make_beer(b.index)
+      Cheers::Brewery.all.each do |brewery|
+        if input == brewery.index 
+          make_beer(brewery)
         end 
       end 
     end 
   end 
   
-  def make_beer
-    Cheers::Scraper.brewery_page.each do |beer_hash, index|
-      binding.pry
-      Cheers::Beer.new(beer_hash)
-    end 
+  def make_beer(brewery)
+    beer_hashes = Cheers::Scraper.brewery_page(brewery)
+      beer_hashes.each {|beer_hash| Cheers::Beer.new(beer_hash)}
   end 
 
 end  
