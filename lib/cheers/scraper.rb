@@ -34,7 +34,9 @@ class Cheers::Scraper
         abv = tr.css("td span").text.to_f
         tr = Hash.new 
         # tr[:url] = url
+        tr[:index] = brewery[:index]
         tr[:name] = name 
+        binding.pry
         tr[:style] = style
         tr[:abv] = abv 
         @@brews << tr
