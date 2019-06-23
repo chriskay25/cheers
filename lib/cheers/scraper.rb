@@ -1,12 +1,12 @@
 class Cheers::Scraper
 
   @@brewery_list = []
-  @@brews = []
 
   def self.breweries 
     # Uses the page method to get HTML, grabs content from first ul, then selects the text from the li's and split it to return an
     # array of arrays, formatted [["Brewery Name", "Brewery Address"], ["Brewery Name", "Brewery Address"]]
     home_pg = Nokogiri::HTML(open("https://www.beeradvocate.com/place/city/1/"))
+    brewery_urls = home_pg.css("div#ba-content ul").first.css("li a").map {|a| a.attribute("href").value}
     home_pg.css("div#ba-content ul").first.css("li").map {|li| li.text}.map {|brewery| brewery.split("  - ")}.each.with_index(1) do |brewery, index|
       name = brewery[0]
       address = brewery[1] 
@@ -14,7 +14,7 @@ class Cheers::Scraper
       brewery[:name] = name 
       brewery[:address] = address 
       brewery[:index] = index 
-      brewery[:url] = "https://www.beeradvocate.com" + home_pg.css("div#ba-content ul").first.css("li a").attribute("href").value
+      brewery[:url] = "https://www.beeradvocate.com" + brewery_urls[index - 1]
       @@brewery_list << brewery
     end
     # @@brewery_list is returned as an array of hashes [{name: name, address: address, url: url}, {name: na...}]
@@ -22,10 +22,9 @@ class Cheers::Scraper
   end 
 
 
-  def self.brewery_page(brewery)
-    # brewery_choice = @@brewery_list.select {|brewery| brewery[:index] == brewery_index}[0] 
+  def self.brewery_page(brewery) 
       bp = Nokogiri::HTML(open(brewery.url))
-      beer_count = bp.css("div#stats_box dd").children[0].text
+      # beer_count = bp.css("div#stats_box dd").children[0].text
       #Iterates over the HTML of the brewery page to get a list of beer and their attributes.
       bp.css("tbody tr").map do |tr|
         # url = tr.css("td a").attribute("href").value
@@ -37,7 +36,8 @@ class Cheers::Scraper
         tr[:brewery] = brewery
         tr[:name] = name 
         tr[:style] = style
-        tr[:abv] = abv 
+        tr[:abv] = abv
+        # binding.pry 
         tr
       end 
   end 

@@ -6,6 +6,7 @@ class Cheers::CLI
     greeting
     make_breweries
     brewery_choice 
+    make_beer
   end 
   
   def greeting 
@@ -37,8 +38,13 @@ class Cheers::CLI
   end 
   
   def make_beer(brewery)
-    beer_hashes = Cheers::Scraper.brewery_page(brewery)
-      beer_hashes.each {|beer_hash| Cheers::Beer.new(beer_hash)}
-  end 
+    Cheers::Scraper.brewery_page(brewery).each do |beer_hash|
+      Cheers::Beer.new(beer_hash)
+    end 
+    brewery.assign_beer 
+    brewery.beer.each.with_index(1) do |beer, index|
+      puts "#{index}. Name: #{beer.name} --- Style: #{beer.style} --- ABV: #{beer.abv}%" 
+    end 
+  end  
 
 end  
