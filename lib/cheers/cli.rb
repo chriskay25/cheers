@@ -7,6 +7,7 @@ class Cheers::CLI
     make_breweries
     brewery_choice 
     make_beer
+    farewell
   end 
   
   def greeting 
@@ -21,7 +22,7 @@ class Cheers::CLI
   end 
 
   def brewery_choice
-    puts "  Enter the corresponding number of the brewery to learn more:".upcase.light_yellow
+    puts "  Enter the corresponding number of the brewery to see their beer list:".upcase.light_yellow
     Cheers::Brewery.all.each.with_index(1) do |brewery, index|
       puts "#{index.to_s.light_white}. #{brewery.name.upcase.light_green} --- #{brewery.address.cyan}"
     end
@@ -29,11 +30,15 @@ class Cheers::CLI
     input = nil 
     while input != "exit"
       input = gets.to_i
+      if input < 1 || input > Cheers::Brewery.all.count
+        puts "Sorry, that's not a valid input, please enter a valid brewery number:"
+      end 
       Cheers::Brewery.all.each do |brewery|
         if input == brewery.index 
-          make_beer(brewery)
+          make_beer(brewery) 
         end 
       end 
+      self.farewell
     end 
   end 
   
@@ -49,5 +54,20 @@ class Cheers::CLI
       puts
     end 
   end  
+
+  def farewell 
+    puts "Would you like to see the list of breweries again? (y/n)".yellow
+    puts "--------------------------------------------------------"
+    input = gets.chomp
+    until input == "y" || input == "n"
+      puts "That is not a valid option, would you like to see the list of breweries again? (y/n)"
+    end 
+    if input == "y"
+      brewery_choice 
+    elsif input == "n"
+      puts "Thank you for using this CLI, I hope you found some tasty options!".light_blue 
+      puts "------------------------------------------------------------------".light_white
+    end  
+  end 
 
 end  
