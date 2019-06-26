@@ -22,7 +22,6 @@ class Cheers::Scraper
   def self.brewery_page(brewery) 
       bp = Nokogiri::HTML(open(brewery.url))
       bp.css("tbody tr").map do |tr|
-        # url = tr.css("td a").attribute("href").value
         name = tr.css("td a b").text 
         style = tr.css("td a")[1].text
         tr.css("td span").text == "?" ? abv = tr.css("td span").text : abv = tr.css("td span").text.to_f 
