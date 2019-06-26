@@ -11,10 +11,7 @@ class Cheers::Scraper
       name = brewery[0]
       address = brewery[1] 
       brewery = Hash.new
-      brewery[:name] = name 
-      brewery[:address] = address 
-      brewery[:index] = index 
-      brewery[:url] = "https://www.beeradvocate.com" + brewery_urls[index - 1]
+      brewery = {name: name, address: address, index: index, url: ("https://www.beeradvocate.com" + brewery_urls[index - 1])} 
       @@brewery_list << brewery
     end
     # @@brewery_list is returned as an array of hashes [{name: name, address: address, url: url}, {name: na...}]
@@ -30,12 +27,7 @@ class Cheers::Scraper
         style = tr.css("td a")[1].text
         tr.css("td span").text == "?" ? abv = tr.css("td span").text : abv = tr.css("td span").text.to_f 
         tr = Hash.new 
-        # tr[:url] = url
-        tr[:brewery] = brewery
-        tr[:name] = name 
-        tr[:style] = style
-        tr[:abv] = abv
-        tr
+        tr = {brewery: brewery, name: name, style: style, abv: abv}
       end 
   end 
 
