@@ -2,6 +2,7 @@ class Cheers::Scraper
 
   @@brewery_list = []
 
+  
   def self.breweries 
     # Uses the page method to get HTML, grabs content from first ul, then selects the text from the li's and split it to return an
     # array of arrays, formatted [["Brewery Name", "Brewery Address"], ["Brewery Name", "Brewery Address"]]

@@ -66,7 +66,7 @@ class Cheers::CLI
     until input == "y" || input == "n"
       puts "That is not a valid option, would you like to see the list of breweries again? (y/n)".light_red
     end 
-    if input == "y"
+    if input == "y"  
       brewery_choice 
     elsif input == "n"
       puts "Thank you for using this CLI, I hope you found some tasty options!".light_blue 
