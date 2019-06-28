@@ -1,8 +1,7 @@
 # Cheers
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cheers`. To experiment with that code, run `bin/console` for an interactive prompt.
+This Ruby Gem is a CLI that provides information on breweries and their offerings around Downtown Atlanta per BeerAdvocate.com.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The CLI will find and display active breweries to the user in a numbered list. The user can then type any eligible number in and press 'Enter' to see a list of that brewery's currently available beer selection. The user is then given the option to start the process over or exit.
 
 ## Development
 
