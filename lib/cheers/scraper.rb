@@ -25,9 +25,10 @@ class Cheers::Scraper
       bp.css("tbody tr").map do |tr|
         name = tr.css("td a b").text 
         style = tr.css("td a")[1].text
+        rating = tr.css("td b").last.text
         tr.css("td span").text == "?" ? abv = tr.css("td span").text : abv = tr.css("td span").text.to_f 
         tr = Hash.new 
-        tr = {brewery: brewery, name: name, style: style, abv: abv}
+        tr = {brewery: brewery, name: name, style: style, rating: rating, abv: abv}
       end 
   end 
 

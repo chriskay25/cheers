@@ -10,7 +10,6 @@ class Cheers::Brewery
   end 
 
   def assign_beer
-    # @beer = []
     Cheers::Beer.all.each do |beer| 
       if beer.brewery == self 
         @beer << beer
