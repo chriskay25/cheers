@@ -1,6 +1,6 @@
 class Cheers::Brewery 
   
-  attr_accessor :name, :address, :beer, :url, :index, :beer_count
+  attr_accessor :name, :address, :beer, :url, :index
   @@all = []
 
   def initialize(attribute_hash) 

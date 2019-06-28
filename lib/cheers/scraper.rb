@@ -2,7 +2,6 @@ class Cheers::Scraper
 
   @@brewery_list = []
 
-  
   def self.breweries 
     # Uses the page method to get HTML, grabs content from first ul, then selects the text from the li's and split it to return an
     # array of arrays, formatted [["Brewery Name", "Brewery Address"], ["Brewery Name", "Brewery Address"]]
@@ -15,7 +14,6 @@ class Cheers::Scraper
       brewery = {name: name, address: address, index: index, url: ("https://www.beeradvocate.com" + brewery_urls[index - 1])} 
       @@brewery_list << brewery
     end
-    # @@brewery_list is returned as an array of hashes [{name: name, address: address, url: url}, {name: na...}]
     @@brewery_list
   end 
 
@@ -32,7 +30,6 @@ class Cheers::Scraper
       end 
   end 
 
-  
 end 
 
 
